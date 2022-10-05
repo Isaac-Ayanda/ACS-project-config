@@ -6,6 +6,7 @@ git clone https://github.com/Isaac-Ayanda/ACS-project-config.git
 mv /ACS-project-config/reverse.conf /etc/nginx/
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf-distro
 cd /etc/nginx/
+touch healthstatus
 touch nginx.conf
 sed -n 'w nginx.conf' reverse.conf
 systemctl restart nginx
